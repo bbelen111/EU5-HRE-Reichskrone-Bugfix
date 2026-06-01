@@ -1,0 +1,22 @@
+hre_reichskrone_mod_block = {
+	usage = game
+	selection_behavior = weighted_random
+	priority = 10 # Higher than CFP's 3 and the base game's 1, ensuring it wins
+
+	hre_imperial_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headwear
+				template = european_imperial
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 2000
+				portrait_is_ruler_of_trigger = { COUNTRY = HRE }
+			}
+		}
+	}
+}
